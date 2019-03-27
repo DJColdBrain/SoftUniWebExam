@@ -1,0 +1,10 @@
+/server/.idea
+/server/*.iml
+target
+encodings.xml
+misc.xml
+uiDesigner.xml
+workspace.xml
+inspectionProfiles
+.name
+compiler.xml
