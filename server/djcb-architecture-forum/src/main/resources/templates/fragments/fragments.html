@@ -1,0 +1,60 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <title>ArchGroup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+    <link th:href="@{/js/google-code-prettify/prettify.css}" rel="stylesheet">
+    <link th:href='@{http://fonts.googleapis.com/css?family=Raleway:500,300,700}' rel='stylesheet' type='text/css'>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+    <link href="../../static/css/bootstrap-responsive.css" th:href="@{/css/bootstrap-responsive.css}" rel="stylesheet">
+
+    <link rel="icon" href="../../static/img/favicon.png" th:href="@{/img/favicon.png}">
+</head>
+<body>
+<div class="navbar navbar-fixed-top" th:fragment="nav-bar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+            <a class="brand" href="#">Nexus</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li><a href="#forum">Forum</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:fragment="footer">
+    <p>&copy; Some dude (Denis {doesn't matter} Byalev) 2019</p>
+</footer>
+<div th:fragment="scripts">
+    <script src="../static/js/jquery.js" th:src="@{js/jquery.js}"></script>
+    <script src="../static/js/scripts.js" th:src="@{js/scripts.js}"></script>
+    <script src="../static/js/google-code-prettify/prettify.js" th:src="@{js/google-code-prettify/prettify.js}"></script>
+    <script src="../static/js/bootstrap-transition.js" th:src="@{js/bootstrap-transition.js}"></script>
+    <script src="../static/js/bootstrap-alert.js" th:src="@{js/bootstrap-alert.js}"></script>
+    <script src="../static/js/bootstrap-modal.js" th:src="@{js/bootstrap-modal.js}"></script>
+    <script src="../static/js/bootstrap-dropdown.js" th:src="@{js/bootstrap-dropdown.js}"></script>
+    <script src="../static/js/bootstrap-scrollspy.js" th:src="@{js/bootstrap-scrollspy.js}"></script>
+    <script src="../static/js/bootstrap-tab.js" th:src="@{js/bootstrap-tab.js}"></script>
+    <script src="../static/js/bootstrap-tooltip.js" th:src="@{js/bootstrap-tooltip.js}"></script>
+    <script src="../static/js/bootstrap-popover.js" th:src="@{js/bootstrap-popover.js}"></script>
+    <script src="../static/js/bootstrap-button.js" th:src="@{js/bootstrap-button.js}"></script>
+    <script src="../static/js/bootstrap-collapse.js" th:src="@{js/bootstrap-collapse.js}"></script>
+</div>
+</body>
+</html>
