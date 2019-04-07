@@ -25,7 +25,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/vendor/jquery/jquery.min.js",
+              "src/assets/vendor/velocity/velocity.min.js",
+              "src/assets/js/app.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

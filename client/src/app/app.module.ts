@@ -1,28 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './forum';
-import { TopicsComponent } from './forum';
-
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
+import {AppRoutingModule , routingComponents} from './app-routing.module';
+//
+import {AppComponent} from './app.component';
+// import {NavbarComponent} from './forum';
+// import {RegisterComponent} from './authentication';
+// import {TopicsComponent} from './forum';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopicsComponent,
-    NavbarComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   exports: [
-    AppComponent,
-    TopicsComponent,
-    NavbarComponent
+    AppComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

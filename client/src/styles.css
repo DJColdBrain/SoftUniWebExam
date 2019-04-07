@@ -1,5 +1,4 @@
-@import './assets/vendor/bootstrap/bootstrap.min.css';
-@import './assets/vendor/bootstrap/bootstrap-grid.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import './assets/fonts/icons/main/mainfont/style.css';
 @import './assets/fonts/icons/font-awesome/css/font-awesome.min.css';
 body {
